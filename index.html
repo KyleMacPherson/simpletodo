@@ -3,11 +3,11 @@
   <head>
     <link rel='stylesheet' href='bower_components/bootstrap/dist/css/boostrap.css'>
   </head>
-  <body>
+  <body ng-controller='ToDoController as todo'>
     <form class='form-horizontal'>
-      <input type='text'>
-      <button class = 'btn'>Submit</button>
-      <p>{{1 }}</p>
+    <textarea ng-model='todo.task'></textarea>
+      <a href='' ng-click='todo.addTask(todo.task)'>submit</span></a>
+      <p></p>
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular/angular-resource.js"></script>
     <script src="app.js"></script>
